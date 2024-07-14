@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChatHistory">
+    <accountData>
+      <list>
+        <AccountData>
+          <accountId value="VXNlcjozNzI1OTY=" />
+          <chats>
+            <list>
+              <chat>
+                <internalId value="c6a12735-3f52-41a7-97be-70fe9f3d6988" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+                <messages>
+                  <list>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="create generateUuid" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="create generateUuid" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="To create a `generateUuid` function in a React application, you can add the following code in a new file, for example, `utils.js`:&#10;&#10;```javascript&#10;/**&#10; * Generates a UUID (Universally Unique Identifier)&#10; * @returns {string} A UUID string&#10; */&#10;export function generateUuid() {&#10;  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {&#10;    const r = Math.random() * 16 | 0, v = c === 'x' ? r : (r &amp; 0x3 | 0x8);&#10;    return v.toString(16);&#10;  });&#10;}&#10;```&#10;&#10;This function generates a UUID using a simple algorithm that combines random hexadecimal values to create a unique string in the format `xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx`, where `x` represents a random hexadecimal digit, and `y` represents a random hexadecimal digit between 8 and b.&#10;&#10;You can then import and use the `generateUuid` function in your React components or other parts of your application like this:&#10;&#10;```javascript&#10;import { generateUuid } from './utils';&#10;&#10;// Generate a new UUID&#10;const newUuid = generateUuid();&#10;console.log(newUuid); // Output: e.g., &quot;a7b8d8c0-1234-4567-89ab-cdef0123456789&quot;&#10;```&#10;&#10;Note that this implementation is a simple example, and there are more robust and secure ways to generate UUIDs, especially if you need to ensure uniqueness across multiple systems or environments." />
+                    </message>
+                  </list>
+                </messages>
+                <updatedAt value="2024-07-14T23:27:40.7179998" />
+              </chat>
+            </list>
+          </chats>
+          <defaultLlm>
+            <llm>
+              <model value="anthropic/claude-3-sonnet-20240229" />
+              <provider value="Anthropic" />
+              <title value="Claude 3 Sonnet" />
+            </llm>
+          </defaultLlm>
+        </AccountData>
+      </list>
+    </accountData>
+  </component>
+</project>
