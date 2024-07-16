@@ -21,6 +21,14 @@ const FormBuilder = () => {
 
     const exportSchema = () => {
         console.log(fields)
+        const schema = JSON.stringify(fields, null, 2);
+        const blob = new Blob([schema], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'schema.json';
+        a.click();
+        URL.revokeObjectURL(url);
     };
 
 
